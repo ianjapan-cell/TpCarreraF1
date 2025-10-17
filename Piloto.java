@@ -25,8 +25,30 @@ public class Piloto {
     }
 
     
-    @Override
+    
+    public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+
+	public void setEscuderia(String escuderia) {
+		this.escuderia = escuderia;
+	}
+
+
+	public void setTiempoVuelta(double tiempoVuelta) {
+		this.tiempoVuelta = tiempoVuelta;
+	}
+
+
+	
+	@Override
     public String toString() {
         return nombre + " (" + escuderia + ") - Tiempo: " + String.format("%.3f", tiempoVuelta) + "s";
+        
     }
+    
+	
+    
+    
 }
